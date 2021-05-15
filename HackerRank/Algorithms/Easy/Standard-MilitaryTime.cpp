@@ -7,11 +7,11 @@ int main() {
   int hr;
   cin >> s;
   hr = ((s[0] - '0') * 10) + (s[1] - '0');
-  if (s[8] == 'P' && s[9] == 'M' && hr == 12)
+  if (s[8] == 'P' && hr == 12)
     cout << hr;
-  else if (s[8] == 'P' && s[9] == 'M')
+  else if (s[8] == 'P')
     cout << hr + 12;
-  else if (s[8] == 'A' && s[9] == 'M' && hr == 12)
+  else if (s[8] == 'A' && hr == 12)
     cout << 00;
   else cout << s[0] << s[1];
 
