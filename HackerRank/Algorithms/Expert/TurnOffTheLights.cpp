@@ -7,7 +7,7 @@ typedef long long LL;
 int main()
 {
     LL n, k;
-    LL v[100005], dp[100005];
+    LL v[50000], dp[50000];
 
     cin >> n >> k;
     for(LL i = 1; i <= n; i++)
