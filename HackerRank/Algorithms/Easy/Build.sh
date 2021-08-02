@@ -1,10 +1,5 @@
 #!/bin/bash
 
-arr=(4 73 67 38 33)
+g++ $1.cpp -o $1.o && ./$1.o
 
-g++ Grading-Student.cpp -o Grading-Student.o && ./Grading-Student.o
-
-for ((i=0; i< ${#arr[@]}; i++))
-do
-  echo ${arr[$i]}
-done
+/bin/rm -f $1.o
