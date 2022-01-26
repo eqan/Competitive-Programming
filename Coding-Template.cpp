@@ -84,7 +84,34 @@ unsigned concatenate(unsigned x, unsigned y) {
         pow *= 10;
     return x * pow + y;
 }
-
+vector<vector<int>> transposeOfAMatrix(vector<vector<int>> v1)
+{
+vector<vector<int>> v2;
+ for(int i=0; i<v1.size(); i++){
+	v2.push_back(v1[i]);
+  }
+  for(int i=0;i<row;i++) {
+    for(int j=0;j<col;j++) {
+      v2[j][i] = v1[i][j];
+    }
+  }
+return v2;
+}
+bool checkPrimeNumber(int n) {
+    bool isPrime = true;
+    if (n == 0 || n == 1) {
+        isPrime = false;
+    }
+    else {
+        for (int i = 2; i <= n / 2; ++i) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    return isPrime;
+}
 int main()
 {
 	vector<int> input({ 2, 5, 3, 4, 0 });
